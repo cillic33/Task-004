@@ -1,0 +1,13 @@
+@font-face {
+  font-family: "DINPro regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DINPro.eot") format("eot"), url("../fonts/DINPro.woff") format("woff"), url("../fonts/DINPro.ttf") format("ttf");
+}
+h1 {
+  font-family: "DINPro regular", sans-serif;
+  font-size: 46px;
+  color: #344258;
+}
+
+/*# sourceMappingURL=main.css.map */
