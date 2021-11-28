@@ -2,28 +2,35 @@
 	font-family: "DINPro regular";
 	font-style: normal;
 	font-weight: 400;
-  
-	src: url("../fonts/DINPro.eot") format("eot"),
-		 url("../fonts/DINPro.woff") format("woff"),
-		 url("../fonts/DINPro.ttf") format("ttf");
-  }
 
-  @font-face {
+	src: url("../fonts/DINPro.eot") format("eot"),
+		url("../fonts/DINPro.woff") format("woff"),
+		url("../fonts/DINPro.ttf") format("ttf");
+}
+
+@font-face {
+	font-family: "DINPro medium";
+	font-style: normal;
+
+	src: url("../fonts/DINPro-Medium.eot") format("eot"),
+		url("../fonts/DINPro-Medium.woff") format("woff"),
+		url("../fonts/DINPro-Medium.ttf") format("ttf");
+}
+
+@font-face {
 	font-family: "DINPro bold";
 	font-style: normal;
-	font-weight: bold;
-  
-	src: url("../fonts/DINPro-Bold.eot") format("eot"),
-		 url("../fonts/DINPro-Bold.woff") format("woff"),
-		 url("../fonts/DINPro-Bold.ttf") format("ttf");
-  }
 
-  @font-face {
+	src: url("../fonts/DINPro-Bold.eot") format("eot"),
+		url("../fonts/DINPro-Bold.woff") format("woff"),
+		url("../fonts/DINPro-Bold.ttf") format("ttf");
+}
+
+@font-face {
 	font-family: "MyriadPro regular";
 	font-style: normal;
-	font-weight: 400;
-  
+
 	src: url("../fonts/MYRIADPRO-REGULAR.eot") format("eot"),
-		 url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"),
-		 url("../fonts/MYRIADPRO-REGULAR.ttf") format("ttf");
-  }
+		url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"),
+		url("../fonts/MYRIADPRO-REGULAR.ttf") format("ttf");
+}

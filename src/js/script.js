@@ -31,4 +31,9 @@ document.addEventListener('DOMContentLoaded', () => {
 
     }
 
+    loadProjects = () => {
+        $('.projects__item-hide').show()
+        $('.projects__load-btn').hide()
+    }
+
 })

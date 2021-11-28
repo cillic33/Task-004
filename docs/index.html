@@ -42,30 +42,81 @@
 						<button type="button" class="btn btn-outline-light projects__more-btn" onClick="fillModal('nokia')" data-toggle="modal" data-target="#projModal">Подробнее</button>
 					</div>
 				</div>
+
+				<div class="col-xs-12 col-md-4 p-0 position-relative projects__item-hide">
+					<img src="img/saha-img.png" class="img-fluid w-100">
+					<div class="position-absolute w-100 bottom-0 text-center pb-3 pt-5 projects__bottom-desc">
+						<p class="projects__title text-uppercase">Республика Саха</p>
+						<button type="button" class="btn btn-outline-light projects__more-btn" onClick="fillModal('saha')" data-toggle="modal" data-target="#projModal">Подробнее</button>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 p-0 position-relative projects__item-hide">
+					<img src="img/gazprom-img.png" class="img-fluid w-100">
+					<div class="position-absolute w-100 bottom-0 text-center pb-3 pt-5 projects__bottom-desc">
+						<p class="projects__title text-uppercase">Газпром</p>
+						<button type="button" class="btn btn-outline-light projects__more-btn" onClick="fillModal('gazprom')" data-toggle="modal" data-target="#projModal">Подробнее</button>
+					</div>
+				</div>
+				<div class="col-xs-12 col-md-4 p-0 position-relative projects__item-hide">
+					<img src="img/nokia-img.png" class="img-fluid w-100">
+					<div class="position-absolute w-100 bottom-0 text-center pb-3 pt-5 projects__bottom-desc">
+						<p class="projects__title text-uppercase">Nokia</p>
+						<button type="button" class="btn btn-outline-light projects__more-btn" onClick="fillModal('nokia')" data-toggle="modal" data-target="#projModal">Подробнее</button>
+					</div>
+				</div>
 			</div>
 		</div>
 
 		<div class="container py-5 text-center">
-			<button type="button" class="btn btn-outline-dark btn-lg text-uppercase projects__load-btn">Загрузить еще</button>
+			<button type="button" class="btn btn-outline-dark btn-lg text-uppercase projects__load-btn" onClick="loadProjects()">Загрузить еще</button>
 		</div>
 
 		<!-- Footer -->
-		<footer>
-			<div class="container py-2">
+		<footer class="footer">
+			<div class="container">
 				<div class="row">
-					<div class="col-sm col-md-7">
-						<p class="h1">Контакты</p>
-						<p>Коммуникационное агентство</p>
-
-						<p>344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12<br>
+					<div class="col-xs-12 col-md-6 col-lg-7">
+						<p class="footer__h1">Контакты</p>
+						<p class="footer__p">Коммуникационное агентство</p>
+						<p class="footer__p">344000, Россия, г. Ростов-на-Дону ул. Мира, д. 12<br>
 						Бизнес–центр «Рост», оф. 104</p>
 
-						<p><a href="tel:+78613001128">+7 (861) 300-11-28</a><br>
-						<a href="tel:+78613001152">+7 (861) 300-11-52</a><br>
-						<a href="tel:+78613001153">+7 (861) 300-11-53</a></p>
+						<div class="container mx-n3 pt-4 pb-5">
+							<div class="row">
+								<div class="col-xs-12 col-xl-6">
+									<p class="footer__phone"><a href="tel:+78613001128">+7 (861) 300-11-28</a></p>
+									<p class="footer__phone"><a href="tel:+78613001152">+7 (861) 300-11-52</a></p>
+									<p class="footer__phone"><a href="tel:+78613001153">+7 (861) 300-11-53</a></p>
+								</div>
+								<div class="col-xs-12 col-xl-1 footer__splitter"></div>
+								<div class="col-xs-12 col-xl-5">
+									<p class="footer__mail">Email:<br><a href="mailto:info@example.com">info@example.com</a></p>
+									<p class="footer__fb"><a href="https://www.facebook.com/Exampleagency/" target="_blank">Facebook.com/exampleagency</a></p>
+								</div>
+							</div>
+						</div>
 
 					</div>
-					<div class="col col-md-5">222</div>
+					<div class="col-xs-12 col-md-6 col-lg-5">
+						<form class="form-request">
+							<div>
+								<input type="text" class="form-control" placeholder="Полное имя" required>
+							</div>
+							<div>
+								<input type="email" class="form-control" placeholder="E-mail" required>
+							</div>
+							<div>
+								<input type="phone" class="form-control" placeholder="Телефон" required>
+							</div>
+							<div>
+								<textarea class="form-control" placeholder="Пожалуйста, опишите задачу" required></textarea>
+							</div>
+							<div class="my-2">
+								<a href="#" class="form-request__policy-link">Политика обработки персональных данных</a>
+							</div>
+							<button type="submit" class="btn btn-outline-light btn-lg text-uppercase form-request__submit">Отправить заявку</button>
+						  </form>
+					</div>
 				</div>
 			</div>
 		</footer>

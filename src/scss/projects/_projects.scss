@@ -1,17 +1,24 @@
 .projects {
 
+    &__item-hide {
+        display: none;
+    }
+
     &__bottom-desc {
         background: linear-gradient(rgba(0, 0, 0, 0), rgb(0 0 0 / 76%));
     }
+
     &__title {
         font-family: $default-font-family-bold;
         font-size: 24px;
         color: #fff;
     }
+
     &__more-btn {
         font-family: $default-font-family;
         font-size: 18px;
     }
+    
     &__load-btn {
         font-family: $default-font-family-bold;
         font-size: 18px;

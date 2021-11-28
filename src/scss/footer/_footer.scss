@@ -1,4 +1,67 @@
-footer {
+.footer {
     color: #fff;
     background: $footer-bg;
+
+    &__h1 {
+        font-family: $default-font-family-bold;
+        font-size: 45px;
+        text-transform: uppercase;
+        line-height: 1;
+        margin: 74px 0 60px 0;
+
+        @include max-screen($md) {
+            font-size: 26px;
+        }
+    }
+
+    &__p {
+        font-family: $second-font-family;
+        font-size: 18px;
+        line-height: 1.2;
+        margin: 0 0 18px 0;
+    }
+
+    &__phone {
+        line-height: 1;
+        margin: 0 0 10px 0;
+
+        a {
+            font-size: $second-font-family;
+            font-size: 30px;
+            color: #fff;
+
+            @include max-screen($md) {
+                font-size: 20px;
+            }
+        }
+    }
+
+    &__mail {
+        font-size: $second-font-family;
+        font-size: 18px;
+        color: $footer-text-color;
+
+        a {
+            font-size: $second-font-family;
+            font-size: 18px;
+            color: $footer-text-color;
+        }
+    }
+
+    &__fb {
+        a {
+            font-size: $second-font-family;
+            font-size: 18px;
+            color: $footer-text-color;
+        }
+    }
+
+    &__splitter {
+        border-left: 3px solid #0058a7;
+
+        @include max-screen($lg) {
+            border: none;
+            height: 30px;
+        }
+    }
 }
