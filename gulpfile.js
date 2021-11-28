@@ -3,7 +3,13 @@
 var gulp = require('gulp'),
     del = require('del'),
     sass = require('gulp-sass')(require('sass')),
-	svgSprite = require('gulp-svg-sprite')
+	svgSprite = require('gulp-svg-sprite'),
+	autoprefixer = require('gulp-autoprefixer'),
+	cssmin = require('gulp-cssmin'),
+	rename = require("gulp-rename"),
+	uglify = require('gulp-uglify'),
+	htmlmin = require('gulp-htmlmin')
+	//image = require('gulp-image')
 
 gulp.task('clean', () => {
     del.sync('docs')
@@ -12,20 +18,26 @@ gulp.task('clean', () => {
 gulp.task('css', () => {
 	gulp.src('src/scss/*.scss')
 		.pipe(sass())
+		.pipe(autoprefixer('last 2 versions', '> 1%'))
+		.pipe(cssmin())
+		.pipe(rename({suffix: '.min'}))
 		.pipe(gulp.dest('docs/css'))
 })
 
 gulp.task('js', () => {
 	gulp.src('src/js/*.js')
+		.pipe(uglify())
+		.pipe(rename({basename: 'main', suffix: '.min', extname: '.js'}))
 		.pipe(gulp.dest('docs/js'))
 })
 
 gulp.task('images', () => {
 	gulp.src('src/img/*.png')
+	//.pipe(image())
 	.pipe(gulp.dest('docs/img'))
 })
 
-gulp.task('svgSprite', () => {
+/*gulp.task('svgSprite', () => {
 	gulp.src('src/img/*.svg')
 	.pipe(svgSprite({
 		mode: {
@@ -36,7 +48,7 @@ gulp.task('svgSprite', () => {
 		}
 	}))
 	.pipe(gulp.dest('docs/img'))
-})
+})*/
 
 gulp.task('fonts', () => {
 	gulp.src('src/fonts/*.*')
@@ -45,7 +57,8 @@ gulp.task('fonts', () => {
 
 gulp.task('html', () => {
 	gulp.src('src/index.html')
+	.pipe(htmlmin({ collapseWhitespace: true }))
 	.pipe(gulp.dest('docs'))
 })
 
-gulp.task('default', ['clean', 'css', 'js', 'images', 'svgSprite', 'fonts', 'html'])
+gulp.task('default', ['clean', 'css', 'js', 'images', 'fonts', 'html'])

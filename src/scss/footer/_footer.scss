@@ -2,6 +2,10 @@
     color: #fff;
     background: $footer-bg;
 
+    @include max-screen($sm) {
+        text-align: center;
+    }
+
     &__h1 {
         font-family: $default-font-family-bold;
         font-size: 45px;

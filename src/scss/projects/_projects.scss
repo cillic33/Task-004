@@ -23,19 +23,25 @@
         font-family: $default-font-family-bold;
         font-size: 18px;
         color: $color-blue-gray;
-        width: 360px;
+        width: 100%;
+        max-width: 360px;
         border-radius: 0;
         border-width: 2px;
         border-color: $color-blue-gray;
 
-        @include max-screen($md) {
-            width: 100%;
-        }
         @include is-hover {
             &:hover {
                 background: $color-blue-gray;
                 border-color: $color-blue-gray;
             }
         }
+
+        @include max-screen($sm) {
+            font-size: 15px;
+        }
+    }
+
+    &__load-btn__hide {
+        display: none;
     }
 }
