@@ -1,0 +1,29 @@
+{
+  "name": "test-task",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/cillic33/Datafolks-test.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/cillic33/Datafolks-test/issues"
+  },
+  "homepage": "https://github.com/cillic33/Datafolks-test#readme",
+  "devDependencies": {
+    "gulp": "^3.9.1",
+    "gulp-sass": "^5.0.0",
+    "gulp-svg-sprite": "^1.5.0",
+    "sass": "^1.43.4"
+  },
+  "dependencies": {
+    "bootstrap-icons": "^1.7.1",
+    "del": "^6.0.0"
+  }
+}

@@ -1,0 +1,79 @@
+@font-face {
+  font-family: "DINPro regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/DINPro.eot") format("eot"), url("../fonts/DINPro.woff") format("woff"), url("../fonts/DINPro.ttf") format("ttf");
+}
+@font-face {
+  font-family: "DINPro bold";
+  font-style: normal;
+  font-weight: bold;
+  src: url("../fonts/DINPro-Bold.eot") format("eot"), url("../fonts/DINPro-Bold.woff") format("woff"), url("../fonts/DINPro-Bold.ttf") format("ttf");
+}
+@font-face {
+  font-family: "MyriadPro regular";
+  font-style: normal;
+  font-weight: 400;
+  src: url("../fonts/MYRIADPRO-REGULAR.eot") format("eot"), url("../fonts/MYRIADPRO-REGULAR.woff") format("woff"), url("../fonts/MYRIADPRO-REGULAR.ttf") format("ttf");
+}
+h1 {
+  font-family: "DINPro regular", sans-serif;
+  font-size: 46px;
+  color: #344258;
+}
+@media screen and (max-width: 767px) {
+  h1 {
+    font-size: 26px;
+  }
+}
+
+.bottom-0 {
+  bottom: 0;
+}
+
+p {
+  font-family: "MyriadPro regular", sans-serif;
+}
+
+.projects__bottom-desc {
+  background: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.76));
+}
+.projects__title {
+  font-family: "DINPro bold", sans-serif;
+  font-size: 24px;
+  color: #fff;
+}
+.projects__more-btn {
+  font-family: "DINPro regular", sans-serif;
+  font-size: 18px;
+}
+.projects__load-btn {
+  font-family: "DINPro bold", sans-serif;
+  font-size: 18px;
+  color: #344258;
+  width: 360px;
+  border-radius: 0;
+  border-width: 2px;
+  border-color: #344258;
+}
+@media screen and (max-width: 767px) {
+  .projects__load-btn {
+    width: 100%;
+  }
+}
+@media (hover: hover) and (pointer: fine) {
+  .projects__load-btn:hover {
+    background: #344258;
+    border-color: #344258;
+  }
+}
+
+.modal__btn-close {
+  width: 22px;
+  cursor: pointer;
+}
+
+footer {
+  color: #fff;
+  background: #0d1b2b;
+}

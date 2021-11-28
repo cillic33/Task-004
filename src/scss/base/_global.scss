@@ -2,4 +2,14 @@
 	  font-family: $default-font-family;
 	  font-size: 46px;
 	  color: #344258;
+
+    @include max-screen($md) {
+      font-size: 26px;
+    } 
+  }
+
+  .bottom-0 {bottom: 0;}
+
+  p {
+    font-family: $second-font-family;
   }
